@@ -1,0 +1,68 @@
+/* Importing Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Styles for the bookist container */
+.bookist-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Adjust the height as needed */
+}
+
+/* Styles for the bookist logo */
+.bookist-logo {
+    width: 75px;
+    height: 100px;
+    margin:50px;
+}
+
+/* Styles for the bookist search section */
+.bookist-search {
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+/* Styles for the bookist input */
+.bookist-input {
+    padding: 8px 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 300px;
+    max-width: 80%;
+    font-size: 16px;
+    outline: none;
+    font-family: 'Inter', sans-serif; /* Applying Inter font to input */
+}
+
+/* Styles for the bookist button */
+.bookist-button {
+    padding: 8px 15px;
+    background-color: #00b597;
+    color: #fff;
+    border: none;
+    border-radius: 4px; /* You can remove this line if you don't want the button to be round */
+    font-size: 16px;
+    font-family: 'Inter', sans-serif; /* Applying Inter font to button */
+}
+
+.bookist-button, .logout-button {
+    padding: 10px 20px;
+    background-color: #00e7aa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .bookist-button:hover, .logout-button:hover {
+    background-color: #00b3b0;
+  }
+  
+  /* Position logout button at the top right corner */
+  .logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }

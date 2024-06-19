@@ -1,0 +1,58 @@
+/* InventoryItem.css */
+.inventory-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #fff;
+    width: 300px; /* Adjust width as needed */
+  }
+  
+  .inventory-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .inventory-details {
+    padding: 20px;
+  }
+  
+  .item-title {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .item-info {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .item-description {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .item-price {
+    margin: 0;
+    font-size: 16px;
+    color: #c45500; /* Amazon orange color */
+  }
+  
+  .item-quantity {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .item-date {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  

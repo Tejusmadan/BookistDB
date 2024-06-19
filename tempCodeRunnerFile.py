@@ -1,0 +1,1 @@
+{'error': 'Insufficient stock for purchase'}

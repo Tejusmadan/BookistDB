@@ -1,0 +1,75 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); /* Thin border-like shadow */
+
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+  }
+  
+  .logo img {
+    margin-top: 5px;
+    margin-right: 10px;
+    height: 20px; /* Adjust height as needed */
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Push search box to the left */
+    
+  }
+  
+  .search-box input {
+    padding: 8px 10px;
+    border: 1px solid #ddd; /* Apply border only to the bottom */
+    border-radius: 4px; /* Add rounded corners */
+    margin-right: 10px;
+    font-family: 'Inter', sans-serif; /* Set font family to Inter */
+    outline: none; /* Remove outline on focus */
+}
+
+  
+  .search-box button {
+    padding: 8px 15px;
+    background-color: #00b597;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif; /* Set font family to Inter */
+  }
+  
+  .links a {
+    margin-right: 90px;
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif; /* Set font family to Inter */
+  }
+  
+  .links a:hover {
+    color: #00b597;
+  }
+
+  .logout-button:hover {
+    background-color: #00b3b0;
+  }
+   .logout-button {
+    padding: 10px 20px;
+    background-color: #00e7aa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top:3px;
+    transition: background-color 0.3s;
+  }
+  

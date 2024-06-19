@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap">
+<link id = 'icon' rel="icon" href="{{ url_for('static', filename='bookistlogo.png') }}" />
+<style>
+    body {
+        font-family: "Inter", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .wrapper {
+        position: relative; /* Add position relative to contain absolute positioning */
+        width: 80%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .wrapper h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+    #username,
+    #password {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #ccc; /* Only bottom border */
+        border-radius: 0; /* Remove border radius */
+        box-sizing: border-box;
+        outline: none;
+    }
+    #loginButton {
+        width: 100%;
+        background-color: #00b597;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 3px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+    #loginButton:hover {
+        background-color: #00e4ba;
+    }
+
+    /* Add styles for logo */
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 50px; /* Adjust as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    @media (max-width: 768px) {
+        .wrapper {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .wrapper {
+            width: 95%;
+        }
+    }
+    #logo1{
+        height:20px;
+        width:15px;
+    }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+    <img id = "logo1" src="{{ url_for('static', filename='bookistlogo.png') }}" alt="Logo" class="logo">
+    <h2>Login</h2>
+    <form action="/login" method="post">
+        <input type="text" name = "username" id="username" placeholder="Username" required>
+        <input  type="password" id="password" name = "password" placeholder="Password" required>
+        <input type="submit" id="loginButton" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>

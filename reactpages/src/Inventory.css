@@ -1,0 +1,116 @@
+/* Inventory.css */
+.inventory-container {
+    padding: 20px;
+  }
+  
+  .inventory-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Align items vertically */
+    margin: -5px; /* Negative margin to offset the spacing */
+  }
+  
+  .inventory-item {
+    flex: 0 0 calc(33.333% - 20px); /* Adjust as needed */
+    margin: 5px; /* Adjust as needed */
+  }
+  
+  .add-item-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #007bff; /* Adjust the color as needed */
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    margin: 5px; /* Adjust as needed */
+  }
+  
+  .add-item-button:hover {
+    background-color: #0056b3; /* Adjust the hover color as needed */
+  }
+  
+  .add-item-button::before,
+  .add-item-button::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+  }
+  
+  .add-item-button::before {
+    width: 2px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .add-item-button::after {
+    height: 2px;
+    width: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Additional styling for InventoryItem component */
+  .inventory-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    margin-right:50px;
+    margin-top: 20px;
+    margin-left:10px;
+  }
+  
+  .inventory-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .inventory-details {
+    padding: 20px;
+  }
+  
+  .item-title {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .item-info {
+    margin: 8px 0; /* Adjusted margin */
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .item-description {
+    margin: 12px 0; /* Adjusted margin */
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .item-price {
+    margin: 0;
+    font-size: 16px;
+    color: #c45500; /* Amazon orange color */
+  }
+  
+  .item-quantity {
+    margin: 8px 0; /* Adjusted margin */
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .item-date {
+    margin: 8px 0; /* Adjusted margin */
+    font-size: 14px;
+    color: #666;
+  }
+  

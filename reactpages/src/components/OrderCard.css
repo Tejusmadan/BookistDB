@@ -1,0 +1,42 @@
+/* OrderCard.css */
+
+.order-group {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.order-group h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.order-group p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.order-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.order-card {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0px 0px 0.1px 0px rgba(0, 0, 0, 0.5); /* Apply straight line box shadow on the bottom */
+}
+
+.order-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.order-card p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
